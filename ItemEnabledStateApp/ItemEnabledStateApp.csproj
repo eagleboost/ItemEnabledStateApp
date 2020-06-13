@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="ItemEnabledState.cs">
+        <DependentUpon>ItemEnabledStateStore.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ItemEnabledStateStore.Contracts.cs">
+        <DependentUpon>ItemEnabledStateStore.cs</DependentUpon>
+      </Compile>
+      <Compile Update="BindingDecoratorBase.cs">
+        <DependentUpon>IsEnabledBinding.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
